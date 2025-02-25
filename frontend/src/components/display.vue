@@ -1,36 +1,43 @@
 <script>
+import botones from './botones.vue';
+import edicion from './edicion.vue';
+import opcional from './opcional.vue';
 export default{
-    name: "x",
+    name: "componenteDisplay",
     components:{
-
+      botones,
+      edicion,
+      opcional
     },
     data(){
         return {
-            prueba: "Hola"
+            pruebaDisplay: "componenteDisplay"
         }
     },
 
     methods:{
         prueba(){
-            return "Prueba"
+            return this.pruebaDisplay
         }
     }
-    
 }
 </script>
 
 <template>
 
-  <div class="container">
-    <div class="col col-8">
-
+  <div id="bordeExterior">
+    <div>
+        <botones></botones>
     </div>
-    <div class="col col-4">
-      
+    <div>
+      <edicion></edicion>
+    </div>
+    <div>
+      <opcional></opcional>
     </div>
   </div>
 </template>
 
-<style scoped>
-
+<style>
+  #bordeExterior{background-color: rgb(241, 212, 241);border:4px solid purple;}
 </style>

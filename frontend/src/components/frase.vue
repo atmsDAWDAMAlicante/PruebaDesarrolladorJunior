@@ -1,18 +1,18 @@
 <script>
 export default{
-    name: "x",
+    name: "componenteFrase",
     components:{
 
     },
     data(){
         return {
-            prueba: "Hola"
+            pruebaFrase: "componenteFrase"
         }
     },
 
     methods:{
         prueba(){
-            return "Prueba"
+            return this.pruebaFrase
         }
     }
     
@@ -20,9 +20,12 @@ export default{
 </script>
 
 <template>
- <p>{{prueba}}</p>
+ <div>{{pruebaFrase}}</div>
+ <div class="container">
+
+ </div>
 </template>
 
 <style scoped>
-p{color:black}
+    div{background-color: rgb(249, 233, 215);border:1px solid orange;}
 </style>

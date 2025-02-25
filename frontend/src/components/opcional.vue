@@ -1,20 +1,17 @@
 <script>
 export default{
-    name: "x",
+    name: "componenteOpcional",
     components:{
 
     },
     data(){
         return {
-            prueba: "Hola"
+            pruebaOpcional: "componenteOpcional"
         }
     },
-    props:[
-        uno
-    ],
     methods:{
         prueba(){
-            return "Prueba"
+            return this.pruebaOpcional
         }
     }
     
@@ -22,9 +19,9 @@ export default{
 </script>
 
 <template>
- 
+ <div>{{pruebaOpcional}}</div>
 </template>
 
 <style scoped>
-
+    div{background-color: rgb(221, 249, 249);border:1px solid blue;}
 </style>

@@ -1,20 +1,17 @@
 <script>
 export default{
-    name: "x",
+    name: "componenteEdicion",
     components:{
 
     },
     data(){
         return {
-            prueba: "Hola"
+            pruebaEdicion: "componenteEdicion"
         }
     },
-    props:[
-        uno
-    ],
     methods:{
         prueba(){
-            return "Prueba"
+            return this.pruebaEdicion
         }
     }
     
@@ -22,9 +19,12 @@ export default{
 </script>
 
 <template>
-
+    <div>
+        {{ pruebaEdicion }}
+        <input type="text">
+    </div>
 </template>
 
 <style scoped>
-
+    div{background-color: rgb(221, 249, 249);border:1px solid blue;}
 </style>

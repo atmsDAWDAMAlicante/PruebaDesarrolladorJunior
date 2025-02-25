@@ -1,10 +1,14 @@
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
-import frase from './components/frase.vue'
-import display from './components/display.vue'
+import frase from './components/frase.vue';
+import lista from './components/lista.vue';
+import display from './components/display.vue';
+
 export default{
   components:{
-    frase
+    frase,
+    lista,
+    display
   }
 }
 
@@ -15,12 +19,22 @@ export default{
 <header>
   <frase></frase>
 </header> 
-<p>Hola</p>
+<div class="container">
+  <div class="row">
+    <div class="col col-8">
+        <lista></lista>
+    </div>
+    <div class="col col-4">
+      <display></display>
+    </div>
+  </div>
+</div>
 </template>
 
 <style scoped>
   header{
     color:black;
+    margin-bottom: 20px;
   }
 
 

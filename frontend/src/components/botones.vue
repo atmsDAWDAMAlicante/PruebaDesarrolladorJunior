@@ -1,20 +1,17 @@
 <script>
 export default{
-    name: "x",
+    name: "componenteBotones",
     components:{
 
     },
     data(){
         return {
-            prueba: "Hola"
+            pruebaBotones: "componenteBotones"
         }
     },
-    props:[
-        uno
-    ],
     methods:{
         prueba(){
-            return "Prueba"
+            return this.pruebaBotones
         }
     }
     
@@ -22,9 +19,11 @@ export default{
 </script>
 
 <template>
- 
+    <div>
+        <button class="btn btn-primary"> {{ pruebaBotones }}</button>
+    </div>
 </template>
 
 <style scoped>
-
+    div{background-color: rgb(221, 249, 249);border:1px solid blue;}
 </style>
