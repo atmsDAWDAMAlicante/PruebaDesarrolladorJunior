@@ -1,0 +1,4 @@
+# Carpeta frontend
+# Dependencias de Vue
+frontend/node_modules/
+frontend/dist/
