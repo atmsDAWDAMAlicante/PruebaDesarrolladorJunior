@@ -9,9 +9,7 @@ export default{
             prueba: "Hola"
         }
     },
-    props:[
-        uno
-    ],
+
     methods:{
         prueba(){
             return "Prueba"
@@ -22,7 +20,15 @@ export default{
 </script>
 
 <template>
- 
+
+  <div class="container">
+    <div class="col col-8">
+
+    </div>
+    <div class="col col-4">
+      
+    </div>
+  </div>
 </template>
 
 <style scoped>
