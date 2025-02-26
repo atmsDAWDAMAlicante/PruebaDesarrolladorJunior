@@ -1,4 +1,5 @@
 <script>
+import eventBus from '../eventBus';
 export default{
     name: "componenteBotones",
     components:{
@@ -10,8 +11,11 @@ export default{
         }
     },
     methods:{
-        prueba(){
-            return this.pruebaBotones
+            limpiarConsola(){ // ¡¡IMPRESCINDIBLE!!
+                console.clear();
+            },
+            refrescarLista(){ // Por el momento es un método de prueba para eventBus.js
+                eventBus.actualizarTareas();
         }
     }
     
@@ -22,7 +26,8 @@ export default{
     <div>
         <button class="btn btn-primary"> Nueva</button>
         <button class="btn btn-primary"> Borrar</button>
-        <button class="btn btn-primary"> Editar</button>
+        <button class="btn btn-primary" @click="refrescarLista"> Editar</button>
+        <button class="btn btn-primary" @click="limpiarConsola"> #</button>
     </div>
 </template>
 
@@ -30,5 +35,7 @@ export default{
     div{
         background-color: rgb(221, 249, 249);
         border:1px solid blue;
-        margin-bottom: 10px;}
+        margin-bottom: 10px;
+        }
+    button{margin-left:5px;}
 </style>

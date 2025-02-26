@@ -1,4 +1,6 @@
 <script>
+import eventBus from '../eventBus';
+import { watch } from 'vue';
 export default{
     name: "componenteLista",
     components:{
