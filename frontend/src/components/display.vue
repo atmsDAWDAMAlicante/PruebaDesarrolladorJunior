@@ -1,13 +1,12 @@
 <script>
 import botones from './botones.vue';
 import edicion from './edicion.vue';
-import opcional from './opcional.vue';
+
 export default{
     name: "componenteDisplay",
     components:{
       botones,
       edicion,
-      opcional
     },
     data(){
         return {
@@ -31,9 +30,6 @@ export default{
     </div>
     <div>
       <edicion></edicion>
-    </div>
-    <div>
-      <opcional></opcional>
     </div>
   </div>
 </template>
