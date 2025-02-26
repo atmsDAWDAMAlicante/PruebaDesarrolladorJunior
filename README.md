@@ -1,6 +1,24 @@
 ## PruebaDesarrolladorJunior
 ### Prueba para desarrollador Junior para el módulo de prácticas de DAW en el curso 2024-2025.
 
+## PASOS PARA LA EJECUCIÓN DEL PROYECTO:
+A) Requisitos previos para la ejecución:
+- XAMPP para el servidor Apache
+- Node.js y npm
+
+B) Servidor Apache
+- Clonar el repositorio en el directorio /htdocs en el caso que se esté ejecutando XAMPP
+- Arrancar el servidor Apache.
+- Comprobar se puede acceder al archivo:
+http://localhost/PruebaDesarrolladorJunior/data/tareas.json
+
+C) Para la ejecución del proyecto de Vue
+- npm install // para instalar las dependencias de Vue
+- cd frontend // entrar en este directorio
+- npm run dev // para ejecutar el proyecto
+
+## EXPLICACIÓN detallada del ejercicio:
+
 El proyecto/ejercicio fue entregado a las 17:00 horas (hora española).
 Duración: 24 horas.
 Entrega: 14:00 horas (hora española).
