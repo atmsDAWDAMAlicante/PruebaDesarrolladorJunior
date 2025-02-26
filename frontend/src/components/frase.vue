@@ -9,11 +9,7 @@ export default{
             pruebaFrase: "componenteFrase"
         }
     },
-
-    methods:{
-       obtenerFrase(){ 
-        }
-    },mounted(){
+    mounted(){
         // Método para obtener una frase de una API https://api.quotable.io/random
         // No permite la conexión directa sólo apuntando a la URL
         fetch("https://api.allorigins.win/get?url=" + encodeURIComponent("https://api.quotable.io/random"))
@@ -32,9 +28,9 @@ export default{
 
 <template>
     <div @DOMContentLoaded="obtenerFrase" class="container">
-        Frase del día: {{pruebaFrase}}
+        <span class="negrita">Frase del día</span>: {{pruebaFrase}}
     </div>
-    <h1>Bienvenido a To-Do</h1>
+    <h1><span class="negrita">Bienvenido a To-Do</span></h1>
 </template>
 
 <style scoped>

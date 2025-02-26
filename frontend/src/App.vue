@@ -17,9 +17,9 @@ export default{
 
 <template>
   
-<header>
-  <frase></frase>
-</header>
+  <header><!-- Encabezado con frase aleatoria: problemas con la API -->
+    <frase></frase>
+  </header>
 
 <div class="container">
   <div class="row">
@@ -34,9 +34,9 @@ export default{
 
 
   <footer><!-- Pie de página: parte metereológico -->
-        <opcional></opcional>
+      <opcional></opcional>
   </footer>
-  
+
 </template>
 
 <style scoped>
