@@ -5,6 +5,7 @@ const eventBus = reactive({
     tareas: [],
     idTarea: 0,
     descripcionTarea: "",
+    listaDeTareas: "",
 
     // Métodos a compartir
     metodoPrueba(){
@@ -20,11 +21,13 @@ const eventBus = reactive({
         .then((response)=>response.json())
         .then((data)=>{
             console.log(data)
-            let resultado = "AAAAAAA";
+            let resultado = "";
             for (let elem of data){
                 resultado += `<input type='radio' name='numeros' name=''/>${elem.descripcion}<br />`
             }
-            return resultado;
+            console.log(resultado)
+            this.listaDeTareas = resultado;
+            return this.listaDeTareas;
         })
     }
 
