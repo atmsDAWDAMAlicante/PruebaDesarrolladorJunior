@@ -23,10 +23,10 @@ export default{
 
 <div class="container">
   <div class="row">
-    <div class="col col-8">
+    <div class="col col-7">
         <lista></lista>
     </div>
-    <div class="col col-4">
+    <div class="col col-5">
       <display></display>
     </div>
   </div>

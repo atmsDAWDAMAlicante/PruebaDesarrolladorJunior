@@ -20,10 +20,15 @@ export default{
 
 <template>
     <div>
-        <button class="btn btn-primary"> {{ pruebaBotones }}</button>
+        <button class="btn btn-primary"> Nueva</button>
+        <button class="btn btn-primary"> Borrar</button>
+        <button class="btn btn-primary"> Editar</button>
     </div>
 </template>
 
 <style scoped>
-    div{background-color: rgb(221, 249, 249);border:1px solid blue;}
+    div{
+        background-color: rgb(221, 249, 249);
+        border:1px solid blue;
+        margin-bottom: 10px;}
 </style>

@@ -20,11 +20,15 @@ export default{
 
 <template>
     <div>
-        {{ pruebaEdicion }}
+        Tarea:
         <input type="text">
     </div>
 </template>
 
 <style scoped>
-    div{background-color: rgb(221, 249, 249);border:1px solid blue;}
+    div{
+        background-color: rgb(221, 249, 249);
+        border:1px solid blue;
+        padding: 20px 10px;
+        }
 </style>

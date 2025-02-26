@@ -35,5 +35,8 @@ export default{
 </template>
 
 <style>
-  #bordeExterior{background-color: rgb(241, 212, 241);border:4px solid purple;}
+  #bordeExterior{
+    background-color: rgb(241, 212, 241);
+    border:4px solid purple;
+    }
 </style>
