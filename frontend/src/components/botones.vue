@@ -24,6 +24,8 @@ export default{
 
 <template>
     <div>
+        <!-- A través de los distintos métodos de estos botones se debería haber -->
+        <!-- llevado a efecto las peticiones Get, Delet, Put y Post-->
         <button class="btn btn-primary"> Nueva</button>
         <button class="btn btn-primary"> Borrar</button>
         <button class="btn btn-primary" @click="refrescarLista"> Editar</button>
