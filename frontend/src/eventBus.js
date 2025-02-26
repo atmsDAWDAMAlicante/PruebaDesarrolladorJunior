@@ -8,19 +8,18 @@ const eventBus = reactive({
     listaDeTareas: "",
 
     // Métodos a compartir
+
+    // Método para realizar pruebas
     metodoPrueba(){
         console.log("Funciona");
     },
+
+
     // Método actualizarTareas para que se ejecute cuando se cargue el componente
     // lista (que contiene la lista de tareas, por tanto tendrá que mostrarlas) y 
     // también se tendrá que ejecutar cuando se completen las acciones CRUD para 
     // mostrar en la lista los cambios efectuados.
-    
-
-  
-
     actualizarTareas(){
-        //console.log("2Actualizar tareas");
         fetch('http://localhost/PruebaDesarrolladorJunior/data/tareas.json')
         .then((response)=>response.json())
         .then((data)=>{
@@ -33,11 +32,12 @@ const eventBus = reactive({
             return this.listaDeTareas;
         }).catch((error)=>console.log("Hay un error"));
     },
+
+    // Método para realizar pruebas
     seleccionarTarea(identificador){
         console.log(`Tarea seleccionada`);
     }
 });
-
 
 
 export default eventBus;
