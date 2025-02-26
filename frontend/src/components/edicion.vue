@@ -8,7 +8,9 @@ export default{
         return {
             pruebaEdicion: "componenteEdicion"
         }
-    },
+    },props:[
+        "tarea"
+    ],
     methods:{
         prueba(){
             return this.pruebaEdicion

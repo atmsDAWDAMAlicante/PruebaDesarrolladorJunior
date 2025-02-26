@@ -6,7 +6,9 @@ export default{
     },
     data(){
         return {
-            pruebaLista: "componenteLista"
+            listaResultado: "",
+            elemento: "",
+            tareaEnviar: ""
         }
     },
     mounted(){
@@ -21,6 +23,7 @@ export default{
                 console.log(data)
                 for (let elem of data){
                     this.pruebaLista+=elem.id
+                    this.listaResultado += `<input type='radio' name='numeros' name=''/>${elem.descripcion}<br />`
                 }
             })
         
@@ -30,7 +33,7 @@ export default{
 </script>
 
 <template>
-    <div> {{ pruebaLista }}</div>
+    <div v-html="listaResultado"></div>
 
 </template>
 
