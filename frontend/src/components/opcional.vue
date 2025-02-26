@@ -36,7 +36,5 @@ export default{
         font-size:0.8em;
         margin-top:10px;
         }
-    .negrita{
-        font-weight: bold;
-        }
+
 </style>
